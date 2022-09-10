@@ -26,6 +26,6 @@ class UsersController < ApplicationController
 
     puts "\n\n\n #{@user.email} \n\n\n"
 
-    render json: @user
+    redirect_to @user
   end
 end
