@@ -7,6 +7,10 @@
   .links {
     display: none;
   }
+
+  .menu {
+    display: flex;
+  }
 }
 
 /* Desktop */
@@ -22,6 +26,10 @@
       a:hover {
         color: $color-primary;
       }
+    }
+
+    .menu {
+      display: none;
     }
   }
 }
