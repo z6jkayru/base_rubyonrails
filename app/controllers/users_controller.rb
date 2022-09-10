@@ -17,6 +17,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    puts "Estas entrando a mostrar..."
     @user = User.find(params[:id])
   end
 
@@ -27,5 +28,16 @@ class UsersController < ApplicationController
     puts "\n\n\n #{@user.email} \n\n\n"
 
     redirect_to @user
+  end
+
+  def destroy
+    puts "Estas entrando a eliminar..."
+
+    @user = User.find(params[:id])
+    @user.destroy
+
+    puts "\n\n\n #{@user} \n\n\n"
+
+    redirect_to root_path
   end
 end

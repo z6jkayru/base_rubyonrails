@@ -1,4 +1,14 @@
-<h1><%= @user.email %></h1>
-<div>
-  <%= @user.status %>
+<div class="grid">
+  <h1><%= @user.email %></h1>
+  <div>
+    <%= @user.status %>
+  </div>
+
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+
+  <%= link_to "Ir al inicio", "/" %>
+  <%= link_to "Ir al root path", root_path %>
+  <%= link_to "Eliminar el usuario", @user, method: :delete %>
 </div>
