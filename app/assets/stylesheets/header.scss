@@ -1,0 +1,19 @@
+@import "theme/variables";
+
+/* Mobile First */
+.header {
+  padding: 4px 8px;
+
+  .links {
+    a:hover {
+      color: $primary;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .header {
+    padding: 10px 30px;
+  }
+}
