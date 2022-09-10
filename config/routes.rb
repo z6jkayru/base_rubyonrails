@@ -5,6 +5,11 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/welcome", to: "home#index"
-  get "/users/new", to: "users#new"
-  post "/users", to: "users#create"
+
+  resources :users do
+    collection do
+      get "/users/new", to: "users#new"
+      post "/users", to: "users#create"
+    end
+  end
 end
