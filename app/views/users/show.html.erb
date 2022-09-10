@@ -11,4 +11,5 @@
   <%= link_to "Ir al inicio", "/" %>
   <%= link_to "Ir al root path", root_path %>
   <%= link_to "Eliminar el usuario", @user, method: :delete %>
+  <%= button_to "Eliminar el user", user_path(id: @user.id), method: :delete %>
 </div>
