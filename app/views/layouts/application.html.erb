@@ -15,13 +15,7 @@
   </head>
 
   <body>
-    <%= render partial: "layouts/header" %>
-
-    <ul class="dropdown-menu">
-      <% @links.each do |link| %>
-        <li><%= link[:title]%></li>
-      <% end %>
-    </ul>
+    <%= render partial: "layouts/header", links: @links %>
 
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
