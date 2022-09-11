@@ -5,7 +5,7 @@
 
   <div class="links">
     <% @links.each do |link| %>
-      <a href="#"><%= link[:title] %></a>
+      <a href="<%= link[:redirectTo] %>"><%= link[:title] %></a>
     <% end %>
   </div>
 
@@ -21,7 +21,7 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
     <% @links.each do |link| %>
-      <a href="#"><%= link[:title] %></a>
+      <a href="<%= link[:redirectTo] %>"><%= link[:title] %></a>
     <% end %>
   </div>
 </div>
