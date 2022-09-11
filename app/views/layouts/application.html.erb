@@ -15,7 +15,9 @@
   </head>
 
   <body>
-    <%= render partial: "layouts/header", links: @links %>
+    <% if @userId %>
+      <%= render partial: "layouts/header", links: @links %>
+    <% end %>
 
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>

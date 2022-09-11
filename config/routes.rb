@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get "/welcome", to: "home#index"
 
+  get "/login", to: "login#index"
+
   resources :users do
     collection do
       get "/users/new", to: "users#new"
