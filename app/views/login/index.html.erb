@@ -3,19 +3,23 @@
     <%= image_tag "logo-fit.png" %>
   </div>
 
-  <div class="form shadow rounded flex flex-col gap-2.5 p-4 m-2 w-3/4 bg-white">
+  <form
+    class="form shadow rounded flex flex-col gap-2.5 p-4 m-2 w-3/4 bg-white"
+    action="/login"
+    method="post"
+  >
     <div class="item">
       <label>Email:</label>
-      <input>
+      <input name="email">
     </div>
 
     <div class="item">
       <label>Contraseña:</label>
-      <input>
+      <input name="password">
     </div>
 
-    <button class="btn-primary mt-4">
+    <button type="submit" class="btn-primary mt-4">
       Iniciar Sesión
     </button>
-  </div>
+  </form>
 </div>

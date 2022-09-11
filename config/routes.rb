@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "/welcome", to: "home#index"
 
   get "/login", to: "login#index"
+  post "/login", to: "login#signIn"
 
   resources :users do
     collection do
