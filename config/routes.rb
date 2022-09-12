@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   get "/login", to: "login#index"
   post "/login", to: "login#signIn"
 
+  get "/register", to: "register#index"
+  post "/register", to: "register#signUp"
+
   resources :users do
     collection do
       get "/users/new", to: "users#new"
